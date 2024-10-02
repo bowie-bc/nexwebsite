@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Inter;
+    src: url("Inter-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: fit-content;
+    background-color: #F3F3F3; 
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 15px 5%;
+
+    font-size:1.75rem;
+    font-family: Inter;
+    font-weight: 600;
+}
+    
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.navlist a{
+    color: white;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color:grey;
+}
+
+.text{
+    font-family: Inter;
+}
+
+.text-medium{
+    color: #2B2B2B;
+    font-size:2rem;
+    font-weight: 1000;
+    line-height: 100%;
+    text-align: center;
+}
+
+.text-big{
+    font-size: 6rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    font-weight: 1000;
+}
+
+.content-support{
+    padding-top: 5%;;
+    display: grid;
+    grid-template-columns:repeat(3,25vw);
+    grid-auto-rows: auto;
+    gap: 4rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-signup{
+    display:flex;
+    flex-direction: column;
+    margin: 10%;
+    gap: 6rem;
+}
+
+.content-login{
+    display:flex;
+    flex-direction: column;
+    margin: 10%;
+    gap: 6rem;
+}
+
+.btn{
+    border: 0;
+    padding: 2% 0%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #78C4EF;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 3rem;
+    color: #2E2E2E;
+    text-align: center;  
+}
+
+.btn:hover{
+    background-color: #0085CF;
+}
+
+.footer {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px 5%;
+
+    font-size: 1.2rem;
+    font-family: Inter;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.footerlist1, .footerlist2{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footerlist1 a, .footerlist2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.footerlist2 a:hover {
+    color: grey;
+}
+
+/* for support */
+.text-box4{
+    font-size:4rem;
+    text-align: left;
+    width: 100%;
+}
+
+.text2-box4{
+    font-weight:normal;
+}
+
+.box{
+    background-color: #E3E3E3;
+    border-radius: 50px;
+    padding: 5rem;
+}
+
+.box1, .box2, .box3{
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.box4{
+    grid-column: span 3;
+    margin: 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.content-box4{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+}
+
+.img{
+    border-radius: 50px;
+}
+
+.learn{
+    text-decoration: underline;
+    font-size: 1.75rem;
+    color: #0085CF;
+    text-align: center;
+}
+
+/* for signup login */
+.text-input{
+    font-size: 2rem;
+    border: 0; 
+    border-radius: 20px; 
+    padding:1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.error{
+    color:red;
+    padding-left: 1rem;
+}
+
+.success{
+    color:yellowgreen;
+    font-size: large;
+}
+
+.text-input:focus{
+    outline:0;
+}
+
+.signupbtn, .loginbtn{
+    background-color: yellowgreen;
+    margin-top: 5%;
+}
+
+.signupbtn:hover, .loginbtn:hover{
+    background-color: #7ba428;
+}
+
+.flex-formsignup, .flex-formlogin{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 1200px){
+    .box1, .box2, .box3{
+        padding: 3rem;
+    }
+    .text-medium{
+        font-size: 1.6rem;
+    }
+}
+    
+@media screen and (max-width: 900px){
+    .navlist {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navlist :nth-child(3){
+        order:-1;
+    }
+
+    .text-big{
+        font-size: 3rem;
+        text-align: center;
+        padding: 0;
+        margin: 2rem 3rem;
+    }
+
+    .text-medium, .text-input{
+        font-size: 1.2rem;
+    }
+
+    .content-support{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+        gap: 2rem;
+    }
+
+    .content-signup, .content-login{
+        gap: 3rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 8rem;
+    }
+
+    .footerlist2 a{
+        font-size: 0.8rem;
+    }
+
+    /* for support */
+    .learn{
+        font-size: 1rem;
+    }
+
+    .text-box4{
+        text-align: center;
+    }
+    
+    .text2-box4{
+        font-size: 1.2rem;
+    }
+
+    .box{
+        border-radius: 50px;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .box1, .box2, .box3{
+        gap: 1rem;
+    }
+
+    .content-box4, .box4{
+        gap: 2rem;
+    }
+
+    .box4{
+        flex-direction: column;
+    }
+    
+    .box4  :nth-child(2){
+        order: -1;
+    }
+
+    .content-box4  :nth-child(2){
+        order: 1;
+    }
+
+    .content-box4{
+        flex-direction: column;
+    }
+
+    /* for signup login */
+    .text-input{
+        margin-bottom: 0;
+    }
+    
+    .btn{
+        font-size: 1.5rem;
+        color: #2E2E2E;
+        text-align: center;
+    }
+
+    .flex-formsignup, .flex-formlogin{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* margin-bottom: 3rem; */
+    }
+}
+

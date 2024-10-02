@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" href = "CSS-support-login-signup.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script defer src="validationlg.js"></script>
+        <title>Nex Community - Login</title>
+    </head>
+
+    <nav class="nav">
+        <ul class="navlist">
+            <li><a href="NexPhone.html">NexPhone</a></li>
+            <li><a href="NexPad.html">NexPad</a></li>
+            <li><a href="NexHome.html" class="logo">NEX.</a></li>
+            <li><a href="NexBuds.html">NexBuds</a></li>
+            <li><a href="NexWatch.html">NexWatch</a></li>
+        </ul>
+    </nav>
+    <body>
+        <p class="text text-big">Nex Community: Login.</p>
+        <section class="content-login">
+            <form id="form" action="/" method="GET">
+                <div class="flex-formlogin">
+                    <div>
+                        <label class="text text-medium" for="username">Username: </label>
+                        <input name="username" id="username" class="text text-input" placeholder="Enter your username">
+                        <div class="text error" id="usernameerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="pw">Password: </label>
+                        <input type="password" name="pw" id="pw" class="text text-input" placeholder="Enter your password">
+                        <div class="text error" id="pwerror"></div>
+                        <div class="text error" id="success"></div>
+                    </div>
+                    
+                    <button type="submit" class="text btn loginbtn">Log In</button>
+
+                </div>
+            </form>
+            <a href="SignUp.html" class="text btn">I don't have an account.</a>
+        </section>
+        <footer class="footer">
+            <ul class="footerlist1">
+                <li><a href="NexHome.html" class="logo">NEX.</a></li>
+                <li><a>© Nex Inc. 2023. All Rights Reserved.</a></li>
+            </ul>
+        
+            <ul class="footerlist2">
+                <li><a href="Support.html">SUPPORT</a></li>
+                |
+                <li><a href="FAQ.html">FAQ</a></li>
+                |
+                <li><a href="PP.html">TERMS OF USE & PRIVACY POLICY</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

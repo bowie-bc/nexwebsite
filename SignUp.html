@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" href = "CSS-support-login-signup.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script defer src="validationsu.js"></script>
+        <title>Nex Community - Sign Up</title>
+    </head>
+    <nav class="nav">
+        <ul class="navlist">
+            <li><a href="NexPhone.html">NexPhone</a></li>
+            <li><a href="NexPad.html">NexPad</a></li>
+            <li><a href="NexHome.html" class="logo">NEX.</a></li>
+            <li><a href="NexBuds.html">NexBuds</a></li>
+            <li><a href="NexWatch.html">NexWatch</a></li>
+        </ul>
+    </nav>
+    <body>
+        <p class="text text-big">Nex Community: Sign Up.</p>
+        <section class="content-signup">
+            <a href="Login.html" class="text btn">I have an account.</a>
+            <form id="form" action="/" method="GET">
+                <div class="flex-formsignup">
+                    <div>
+                        <label class="text text-medium" for="fname" >First Name: </label>
+                        <input type="text" name="fname" id="fname" class="text text-input" placeholder="Enter your first name" >
+                        <div class="text error" id="fnameerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="lname">Last Name: </label>
+                        <input type="text" name="lname" id="lname" class="text text-input" placeholder="Enter your last name" >
+                        <div class="text error" id="lnameerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="username">Username: </label>
+                        <input type="text" name="username" id="username" class="text text-input" placeholder="Enter your preferred username">
+                        <div class="text error" id="usernameerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="email">Email: </label>
+                        <input type="text" name="email" id="email" class="text text-input" placeholder="Enter your email"     >
+                        <div class="text error" id="emailerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="cnum">Contact Number: </label>
+                        <input type="text" name="cnum" id="cnum" class="text text-input" placeholder="Enter your contact number">
+                        <div class="text error" id="cnumerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="pw">Password: </label>
+                        <input type="password" name="pw" id="pw" class="text text-input" placeholder="Enter your preferred password">
+                        <div class="text error" id="pwerror"></div>
+                    </div>
+                    <div>
+                        <label class="text text-medium" for="vpw">Verify Password: </label>
+                        <input type="password" name="vpw" id="vpw" class="text text-input" placeholder="Re-enter your preferred password">
+                        <div class="text error" id="vpwerror"></div>
+                    </div>
+                    <button type="submit" class="text btn signupbtn" >Sign Up</button>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <ul class="footerlist1">
+                <li><a href="NexHome.html" class="logo">NEX.</a></li>
+                <li><a>© Nex Inc. 2023. All Rights Reserved.</a></li>
+            </ul>
+        
+            <ul class="footerlist2">
+                <li><a href="Support.html">SUPPORT</a></li>
+                |
+                <li><a href="FAQ.html">FAQ</a></li>
+                |
+                <li><a href="PP.html">TERMS OF USE & PRIVACY POLICY</a></li>
+            </ul>
+        </footer>
+    </body>
+
+
+</html>
